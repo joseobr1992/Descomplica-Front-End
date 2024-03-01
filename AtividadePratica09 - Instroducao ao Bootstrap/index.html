@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Pratica 09 - Página Responsiva com Bootstrap</title>
+    <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css”>
+</head>
+<body>
+    <nav class=“navbar navbar-expand-lg navbar-light bg-light”>
+        <a class=“navbar-brand” href=“#”>Meu Site</a>
+        <button class=“navbar-toggler” type=“button” data-toggle=“collapse” data-target=“#navbarNav” aria-controls=“navbarNav” aria-expanded=“false” aria-label=“Toggle navigation”>
+            <span class=“navbar-toggler-icon”></span>
+        </button>
+
+        <div class=“collapse navbar-collapse” id=“navbarNav”>
+            <ul class=“navbar-nav”>
+                <li class=“nav-item”>
+                    <a class=“nav-link” href=“#header”>Cabeçalho</a>
+
+                </li>
+                <li class=“nav-item”>
+                    <a class=“nav-link” href=“#conteudo”>Conteúdo</a>
+                </li>
+
+                <li class=“nav-item”>
+                    <a class=“nav-link” href=“#galeria”>Galeria</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+     <header id=“header” class=“jumbotron jumbotron-fluid”>
+        <div class=“container”>
+            <h1 class=“display-4”>Bem-vindo ao meu site!</h1>
+            <p class=“lead”>Este é um simples exemplo de um cabeçalho.</p>
+        </div>
+    </header>
+
+    <section id=“conteudo” class=“container”>
+        <div class=“row”>
+            <div class=“col”>
+                <h3>Coluna 1</h3>
+                <p>Este é um exemplo de texto para a primeira coluna.</p>
+            </div>
+
+            <div class=“col”>
+                <h3>Coluna 2</h3>
+                <p>Este é um exemplo de texto para a segunda coluna.</p>
+            </div>
+
+            <div class=“col”>
+                <h3>Coluna 3</h3>
+                <p>Este é um exemplo de texto para a terceira coluna.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id=“galeria” class=“container”>
+        <div class=“row”>
+            <div class=“col-md-4”>
+                <img src=“imagem1.jpg” class=“img-fluid” alt=“Imagem 1”>
+            </div>
+           <!-- repita o bloco acima para cada imagem -->
+        </div>
+
+    </section>
+
+    <footer class=“footer bg-light”>
+        <div class=“container”>
+            <span class=“text-muted”>Entre em contato: email@example.com</span>
+        </div>
+    </footer>
+
+    <!-- Aqui vão os componentes da página -->
+    <script src=“https://code.jquery.com/jquery-3.3.1.slim.min.js”></script>
+    <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js”></script>
+</body>
+</html>

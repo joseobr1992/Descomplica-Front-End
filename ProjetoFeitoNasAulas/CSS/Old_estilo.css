@@ -1,0 +1,92 @@
+
+/*ANTES DO BOOTSTRAP*/
+
+body {
+    font-weight: 400; /*É tom de negrito da fonte*/
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 15px; /*Aqui estou usando uma unidade absoluta de 15 px*/
+    line-height: 2.2em;/*Espaçamento entre linhas, EM é relativo ao elemento pai que é o body, será 2.2 * 15 px*/
+    color: #818181;
+    margin: 0;
+}
+
+header {
+    background-color: #F4511E; /*Cor de fundo*/
+}
+
+section, footer {
+    margin: 40px;
+}
+
+h1 {
+    font-size: 63px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;/*Deixar o texto todo em maiusculo*/
+    color: #303030;
+    font-weight: 600;
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none; /*Eu removo a linha abaixo do link, tiro toda decoração do texto*/
+}
+
+nav li {
+    /*O li vai flutuar dentro do nav*/
+    float: left; /*O floar faz o elemento flutuar na página com isso eu consigo reposicioná-lo*/
+}
+
+nav ul {
+    /*O ul vai flutuar dentro do nav e já tem o li flutuando dentro dele*/
+    float: right;
+    list-style: none; /*Eu removo o icone da bolinha, numero, etc que faz a lista, deixo só o nome sem a caracteristica de lista*/
+}
+
+nav {
+    font-size: 12px;
+    letter-spacing: 4px; /*É espaçamento entre as letras*/
+    height: 50px;/*elementos float eu preciso definir a altura*/
+    background-color: #d01e1e;
+    padding-right: 40px;
+}
+
+table{
+    width: 100%; /*vai ocupar toda a largura da pagina quando coloco 100% */
+}
+
+table td {
+    color: #303030;
+    padding: 5px;
+}
+
+table tr:nth-child(even) {
+    /*usando nth-child(even) eu estilizo todas as linhas pares da tabela*/
+    background-color: #e9e9e9;
+}
+
+table tr:nth-child(odd) {
+    /*com odd estolho todas as linhas impares*/
+    background-color: #bdbdbdbd;
+}
+
+table thead th{
+    background-color: #d01e1e;
+    color: white;
+}
+
+#pacotes .figuras figure{
+    /*quero posicionar os elementos em linha, um do lado do outro*/
+    display: inline-block;
+}
+
+#pacotes .figuras, #pacotes .videos{
+    text-align: center;
+}
+
